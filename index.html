@@ -22,12 +22,155 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
 
 <html lang="en">
   <head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet" 
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <body>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">My Albums</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Album Covers</a></li>
+      <li><a href="#">Album Reviews</a></li>
+      <li><a href="#">My Least Favourite Albums</a></li>
+    </ul>
+  </div>
+</nav>
+  <title>My Albums</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <div class="jumbotron text-center">
+  <h1>My Favourite Albums</h1> 
+</div>
+<style>
+footer {
+  text-align: center;
+  padding: 3px;
+  color: black;
+  border: 1px solid black;
+}
+p.thick {
+  font-weight: bold;
+  font-size: 20px;
+}
+p.disappear {
+    visibility: hidden;
+}
+</style>
+
+<!-- EXERCISE 1
+            For every Album we'd like to have a consistent style.
+            Create a class for:
+            - The album container
+            - The album cover
+            - The album title
+            - The album group / singer / dj
+            - The album genre
+            - The album duration
+            - etc
+
+            to make sure you give every album the same consistent appearance.
+         -->
+
+  <div class="container">
+  <div class="cover">
+  <div class="title">
+  <div class="artist">
+  <div class="genre">
+  <div class="duration">
+
+    <div class="container">
+    <div class="row">
+     <div class="cover">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/61MoJyecIHL._SL1200_.jpg" alt="My Beautiful Dark Twisted Fantasy" style="width:20%">
+       <div class="title">
+        <h3>My Beautiful Dark Twisted Fantasy</h3>
+         <div class="artist">
+      <p>Kanye West</p>
+       <div class="genre">
+      <p>Rap</p>
+       <div class="duration">
+       <p>Lenght: 68:36</p>
+    </div>
+      <div class="container">
+    <div class="cover">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/819360l3dYL._SL1500_.jpg" alt="Lemonade" style="width:20%">
+        <div class="title">
+        <h3>Lemonade</h3>
+         <div class="artist">
+      <p>Beyonce</p>
+       <div class="genre">
+      <p>R&B</p>
+       <div class="duration">
+       <p>Lenght: 45:45</p>
+    </div>
+      <div class="container">
+    <div class="cover">
+      <img src="https://images-na.ssl-images-amazon.com/images/I/51vGncnu2uL._SL1417_.jpg" alt="Channel Orange" style="width:20%">
+      <div class="title">
+      <h3>Channel Orange</h3>
+       <div class="artist">      
+      <p>Frank Ocean</p>
+       <div class="genre">
+      <p>Rap</p>
+       <div class="duration">
+       <p>Lenght: 62:18</p>
+    </div>
+  </div>
+</div>
+
+    <title>My Albums</title>
+ <style>
+      table,
+      th,
+      td {
+        padding: 20px;
+        border: 1px solid green;
+        border-radius: 10px;
+        margin: 25px 25px 25px 25px;
+      }
+      body {
+          width: 100%;
+          text-align: center;
+          margin: 25px 25px 25px 25px;
+      }
+      h1 {
+          text-align: center;
+          margin: 25px 25px 25px 25px;
+      }
+      a {
+          color: red;
+      }
+      div {
+        border: 1px solid black;
+      }
+    </style>
+
+
+<!-- <hX>My Favourite Albums</hX>
+<ol>
+<li>My Beautiful Dark Twisted Fantasy</li>
+<li>Lemonade</li>
+<li>Thriller</li>
+</ol>
+<table id="myTable"; width="100%">
+<tr>
+<td>Other Movies</td>
+<td>Movie Poster</td>
+<td>Actors</td>
+<td>Release Year</td>
+<td>Movie Lenght</td>
+</tr>
 
     <style>
       /* EXERCISE 1
@@ -44,8 +187,15 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             to make sure you give every album the same consistent appearance.
          */
     </style>
+    <footer>
+  <p class="thick"> © Roosa Vuotso<br>
+  Zelinkagasse 2, Österreich<br>
+  <a href= "mailto:roosavuotso@hotmail.com">roosavuotso@hotmail.com</a></p><br>
+  <p class="disappear">This text should disappear</p>
+</footer>
   </head>
-  <body>
+  </body>
+</html>
     <!-- EXERCISE 2 
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page
