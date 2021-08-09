@@ -1,9 +1,9 @@
 h1 {
-    padding: 20px;
+    padding-top: 50px;
     color: white;
 }
 body {
-  margin: 30px;
+  /* margin: 30px; */
   font-family: Arial;
   color: white;
   background: rgb(1,1,1);
